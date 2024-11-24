@@ -1,0 +1,67 @@
+// Program to illustrate the use of Println() function
+
+/*package main
+import "fmt"
+
+// prints output in different lines
+func main() {
+
+  currentSalary := 50000
+
+  fmt.Println("Hello")
+  fmt.Println("World!")
+  fmt.Println("Current Salary:", currentSalary)
+
+}*/
+// Program to print output using print() function
+
+/*package main
+
+func main() {
+  println("Using println instead of fmt.Println")
+  
+  print("Using print instead of fmt.Print")
+}*/
+
+/*package main
+import "fmt"
+
+func main() {
+  var name string
+
+  // takes input value for name
+  fmt.Print("Enter your name: ")
+  fmt.Scan&name)
+
+  fmt.Printf("Name: %s", name)
+}*/
+
+/*package main
+import "fmt"
+
+func main() {
+    
+  // create variables
+  var name string
+  var age int
+    
+  // take name and age input
+  fmt.Println("Enter your name and age:")
+  fmt.Scan(&name, &age)
+    
+  // print input values
+  fmt.Printf("Name: %s\nAge: %d", name, age)
+
+} */
+
+package main
+
+import "fmt"
+
+func main() {
+    var name, city string
+    fmt.Print("Enter your name and city (Scanln): ")
+    fmt.Scanln(&name, &city)  // Reads until the first newline
+    fmt.Println("Name:", name)
+    fmt.Println("City:", city)
+}
