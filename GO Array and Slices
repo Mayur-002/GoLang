@@ -1,0 +1,110 @@
+// Program to create an array and prints its elements
+
+/*package main
+import "fmt"
+
+func main() {
+   
+  // declare array variable of type integer
+  // defined size [size=5]
+
+   // 1 num := [5] int{1, 5, 8, 0, 3}
+  //2 var num =[5]int{1, 5, 8, 0, 3}
+  //3 num :=[...]int{1,5,8,0,3}
+
+  fmt.Println(num)
+}*/
+
+// Program to access the array elements
+
+/*package main
+import "fmt"
+
+func main() {
+  languages := [3]string{"Go", "Java", "C++"}
+
+  // access element at index 0
+  fmt.Println(languages[0]) // Go
+
+  // access element at index 2
+   fmt.Println(languages[1]) // C++
+
+}*/
+
+/* two dimensional array
+package main
+import "fmt"
+
+func main() {
+
+  num := [3][2]int{{3,4},{3,5}}
+
+  fmt.Println(num)
+
+}*/
+
+
+/*length of an array
+
+package main
+import "fmt"
+
+func main() {
+
+	num :=[...]int{1,5,8,0,3}
+	length := len(num)
+
+	fmt.Println(length)
+  fmt.Println(num)
+}*/
+
+/*package main
+import "fmt"
+
+func main() {
+  age := [...]int{12, 4, 5}
+
+  // loop through the array
+  for i := 0; i < len(age); i++ {
+    fmt.Println(age[i])
+  }
+
+}*/
+
+// Program to create a slice and print its elements
+
+/*package main
+import "fmt"
+
+func main() {
+
+  // declare slice variable of type integer
+  numbers := []int{1, 2, 3, 4, 5,6,9}
+  Length :=len(numbers)
+  fmt.Println("Length: ", Length)
+ 
+  for i := 0; i < len(numbers); i++ {
+    fmt.Println(numbers[i])
+  }
+
+   // create slice from an array
+   sliceNumbers := numbers[2:5]
+
+   fmt.Println("sliceNumbers: ", sliceNumbers)
+
+  // print the slice
+  fmt.Println("Numbers: ", numbers)
+}*/
+
+// Program to add elements to a slice
+
+package main
+import "fmt"
+
+func main() {
+  primeNumbers := []int{2, 3}
+  
+  // add elements 5, 7 to the slice
+  primeNumbers = append(primeNumbers, 5, 7)
+  fmt.Println("Prime Numbers:", primeNumbers)
+}
