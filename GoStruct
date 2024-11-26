@@ -1,0 +1,87 @@
+/*package main
+import "fmt"
+
+func main() {
+
+  // declare a struct
+  type Person struct {
+    name string
+    age  int
+  }
+
+  // assign value to struct while creating an instance
+  person1 := Person{ "John", 25}
+  fmt.Println(person1)
+
+  // define an instance
+  var person2 Person
+
+  // assign value to struct variables
+  person2 = Person {
+    name: "Sara",
+    age: 29,
+  }
+
+  fmt.Println(person2)
+}*/
+
+
+/*//Struct Embedding
+
+package main
+
+import "fmt"
+
+type Person struct {
+    Name string
+    Age  int
+}
+
+type Employee struct {
+    Person      // Embedded struct
+    Position    string
+    Department  string
+}
+
+func main() {
+    e := Employee{
+        Person: Person{Name: "Alice", Age: 30},
+        Position: "Developer",
+        Department: "IT",
+    }
+
+    // Access fields from both structs
+    fmt.Println(e.Name)       // Promoted field: Output "Alice"
+    fmt.Println(e.Age)        // Promoted field: Output "30"
+    fmt.Println(e.Position)   // Field from Employee: Output "Developer"
+}
+*/
+
+//pointers to struct
+
+package main
+import "fmt"
+
+func main() {
+
+  // declare a struct Person
+  type Person struct {
+    name string
+    age int
+  }
+
+  // instance of the struct Person
+  person1 := Person{"John", 25}
+
+  // create a struct type pointer that
+  // stores the address of person1
+  var ptr *Person
+  ptr = &person1
+
+  // print struct instance
+  fmt.Println(person1)
+
+  // print the struct type pointer
+  fmt.Println(ptr)
+
+}
